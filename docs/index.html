@@ -108,36 +108,36 @@ font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,
   <tr>
     <td style="width: 50%; height:9%"  colspan="2">
     <button style="width: 100%;" class="button-6" role="button" id="1st Dan"   onclick="selectAnswer(event, '1st Dan')">
-	<div style="width:50%;height:20px;display:flex;">
-	  <div style="width:70%; height:100%;background-color:black;">&nbsp;</div>
-	  <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
-	  <div style="width:28%; height:100%;background-color:black;">&nbsp;</div>
-	</div>
-	<div style="width:50%; height:100%;">1st Dan</button>
+    <div style="width:50%;height:20px;display:flex;">
+      <div style="width:70%; height:100%;background-color:black;">&nbsp;</div>
+      <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
+      <div style="width:28%; height:100%;background-color:black;">&nbsp;</div>
+    </div>
+    <div style="width:50%; height:100%;">1st Dan</button>
   <tr>
     <td style="width: 50%; height:9%"  colspan="2">
     <button style="width: 100%;" class="button-6" role="button" id="2nd Dan"   onclick="selectAnswer(event, '2nd Dan')">
-	<div style="width:50%;height:20px;display:flex;">
-	  <div style="width:70%; height:100%;background-color:black;">&nbsp;</div>
-	  <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
-	  <div style="width:2%; height:100%;background-color:black;">&nbsp;</div>
-	  <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
-	  <div style="width:24%; height:100%;background-color:black;">&nbsp;</div>
-	</div>
-	<div style="width:50%; height:100%;">2nd Dan</button>
+    <div style="width:50%;height:20px;display:flex;">
+      <div style="width:70%; height:100%;background-color:black;">&nbsp;</div>
+      <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
+      <div style="width:2%; height:100%;background-color:black;">&nbsp;</div>
+      <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
+      <div style="width:24%; height:100%;background-color:black;">&nbsp;</div>
+    </div>
+    <div style="width:50%; height:100%;">2nd Dan</button>
   <tr>
     <td style="width: 50%; height:9%"  colspan="2">
     <button style="width: 100%;" class="button-6" role="button" id="3rd Dan"   onclick="selectAnswer(event, '3rd Dan')">
-	<div style="width:50%;height:20px;display:flex;">
-	  <div style="width:70%; height:100%;background-color:black;">&nbsp;</div>
-	  <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
-	  <div style="width:2%; height:100%;background-color:black;">&nbsp;</div>
-	  <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
-	  <div style="width:2%; height:100%;background-color:black;">&nbsp;</div>
-	  <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
-	  <div style="width:20%; height:100%;background-color:black;">&nbsp;</div>
-	</div>
-	<div style="width:50%; height:100%;">3rd Dan</button>
+    <div style="width:50%;height:20px;display:flex;">
+      <div style="width:70%; height:100%;background-color:black;">&nbsp;</div>
+      <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
+      <div style="width:2%; height:100%;background-color:black;">&nbsp;</div>
+      <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
+      <div style="width:2%; height:100%;background-color:black;">&nbsp;</div>
+      <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
+      <div style="width:20%; height:100%;background-color:black;">&nbsp;</div>
+    </div>
+    <div style="width:50%; height:100%;">3rd Dan</button>
   </table>
 </div>
 
@@ -147,11 +147,11 @@ font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,
         'js-yaml': 'https://unpkg.com/js-yaml@4.1.0/dist/js-yaml'
       }
     });
-	
-	var busy = false;
-	var questions = [];
-	var question_index = 0;
-	
+    
+    var busy = false;
+    var questions = [];
+    var question_index = 0;
+    
     requirejs(['js-yaml'], function (yaml) {
 
       $.get("content.yaml", function (data) {
@@ -161,61 +161,61 @@ font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,
           console.log(JSON.stringify(data, undefined, 2));
           var ranks = Object.keys(data);
           var techniques = [];
-		  for (const rank of ranks) {
-		    for (technique of data[rank]) {
-			  techniques.push(technique);
-			}
-		  }
+          for (const rank of ranks) {
+            for (technique of data[rank]) {
+              techniques.push(technique);
+            }
+          }
           console.log(" ----[RANKS]----");
           console.log(JSON.stringify(ranks, undefined, 2));
           console.log(" ----[TECHNIQUES]----");
-		  console.log(JSON.stringify(techniques, undefined, 2));
-		  
-		  var quest = "";
-		  var level = "";
-		  
-		  function randomize() {
-		   var randomRank = ranks[Math.floor(Math.random()*ranks.length)];
-		   var randomTechnique = data[randomRank][Math.floor(Math.random()*data[randomRank].length)];
-		  
+          console.log(JSON.stringify(techniques, undefined, 2));
+          
+          var quest = "";
+          var level = "";
+          
+          function randomize() {
+           var randomRank = ranks[Math.floor(Math.random()*ranks.length)];
+           var randomTechnique = data[randomRank][Math.floor(Math.random()*data[randomRank].length)];
+          
            quest = randomTechnique;
            level= randomRank
            document.getElementById('question').innerHTML=quest;
-		  }
-		  
-		  randomize();
-		  
+          }
+          
+          randomize();
+          
           function selectAnswer(evt, answer) {
-		     if(busy) {
+             if(busy) {
                console.log("Still busy...");
-			   return;
-			 }
-		  
+               return;
+             }
+          
              if(answer == level) {
-			   busy=true;
+               busy=true;
                console.log("Correct answer.");
-			   var originalContent=document.getElementById(answer).innerHTML;
-			   document.getElementById(level).style.backgroundColor="#90EE90";
-			   setTimeout(function() {
-			     document.getElementById(level).style.backgroundColor="";
-				 randomize();
-				 busy=false;
-			    }, 1000);
+               var originalContent=document.getElementById(answer).innerHTML;
+               document.getElementById(level).style.backgroundColor="#90EE90";
+               setTimeout(function() {
+                 document.getElementById(level).style.backgroundColor="";
+                 randomize();
+                 busy=false;
+                }, 1000);
              } else {
-			   busy=true;
+               busy=true;
                console.log("wrong. answer:" + answer + "expected: " + level + " for " + document.getElementById("question").innerHTML);
-			   document.getElementById(answer).style.backgroundColor="#FF7276";
-			   document.getElementById(level).style.backgroundColor="#90EE90";
-			   setTimeout(function() {
-			    document.getElementById(answer).style.backgroundColor="";
-			    document.getElementById(level).style.backgroundColor="";
-				busy=false;
-			}, 2000);
+               document.getElementById(answer).style.backgroundColor="#FF7276";
+               document.getElementById(level).style.backgroundColor="#90EE90";
+               setTimeout(function() {
+                document.getElementById(answer).style.backgroundColor="";
+                document.getElementById(level).style.backgroundColor="";
+                busy=false;
+            }, 2000);
              }
              
           }
-		  
-		  window.selectAnswer=selectAnswer;
+          
+          window.selectAnswer=selectAnswer;
           console.log("=== READY! ===");
         }
         catch (exceptionVar) {
