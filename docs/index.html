@@ -76,6 +76,15 @@ font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,
 </head>
 <body>
 <div class="content">
+  <div class="scores" id="scores">
+  <table style="width: 100%; height:80%">
+  <tr>
+  <td style="width: 50%; height:9%">
+  <button disabled style="width: 100%;" class="button-6" id="score">&nbsp;</button>
+  <td style="width: 50%; height:9%">
+  <button disabled style="width: 100%;" class="button-6" id="high-score">&nbsp;</button>
+  </table>
+  </div>
   <div class="question" id="question">
   
   </div>
@@ -174,13 +183,28 @@ font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,
           var quest = "";
           var level = "";
           var currentLevel = 0;
+          var highScore = localStorage.getItem('high-score');
+          if (null === highScore) {
+            localStorage.setItem("high-score", 0);
+            highScore=0;
+          }
+          document.getElementById("high-score").innerHTML="High score: " + highScore;
+          
           var questions = [];
           var levels = [];
           var firstTry=true;
           
           function randomize() {
            console.log("Current level: " + currentLevel);
+           document.getElementById("score").innerHTML="Score: " + currentLevel;
            
+           if (highScore < currentLevel)
+           {
+               highScore=currentLevel;
+               localStorage.setItem("high-score", currentLevel);
+               document.getElementById("high-score").innerHTML="High score: " + highScore;
+           }
+
            firstTry=true;
            if (currentLevel < questions.length) {
              quest=questions[currentLevel]
