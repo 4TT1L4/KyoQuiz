@@ -1,0 +1,228 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://unpkg.com/js-yaml@4.1.0/dist/js-yaml.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* CSS */
+.button-6 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  min-height: 1.5rem;
+  padding: calc(.855rem - 1.1px) calc(1.2rem - 1.1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 100%;
+  height: 100%;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+div.content {
+  display: table; width:100%; max-width: 650px; padding: 0px; margin: 0 auto 10
+}
+
+div.question {
+display: flex;
+  justify-content: center;
+  align-items: center;
+text-shadow: gray 1px 0 2px;
+text-align:center;
+font-size:50px;
+height:150px;
+max-height: 150px;
+padding: 10px 0px 10px 0px;
+font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+</style>
+</head>
+<body>
+<div class="content">
+  <div class="question" id="question">
+  
+  </div>
+  <table style="width: 100%; height:80%">
+  <tr>
+  <td style="width: 50%; height:9%">
+  <button style="width: 100%;" class="button-6" role="button" id="10th Kyu" onclick="selectAnswer(event, '10th Kyu')"><div style="width:50%;height:20px;"><div style="width:100%; height:50%;background-color:orange;">&nbsp;</div><div style="width:100%; height:50%;background-color:orange;">&nbsp;</div></div><div style="width:100%; height:100%;">10th&nbsp;Kyu</div></button>
+  <td style="width: 50%; height:9%">
+  <button style="width: 100%;" class="button-6" role="button" id="9th Kyu"  onclick="selectAnswer(event, '9th Kyu')"><div style="width:50%;height:20px;"><div style="width:100%; height:50%;background-color:blue;">&nbsp;</div><div style="width:100%; height:50%;background-color:orange;">&nbsp;</div></div><div style="width:100%; height:100%;">9th&nbsp;Kyu</button>
+  <tr>
+  <td style="width: 50%; height:9%">
+  <button style="width: 100%;" class="button-6" role="button" id="8th Kyu"   onclick="selectAnswer(event, '8th Kyu')"><div style="width:50%;height:20px;"><div style="width:100%; height:50%;background-color:blue;">&nbsp;</div><div style="width:100%; height:50%;background-color:blue;">&nbsp;</div></div><div style="width:100%; height:100%;">8th&nbsp;Kyu</button>
+  <td style="width: 50%; height:9%">
+  <button style="width: 100%;" class="button-6" role="button" id="7th Kyu"   onclick="selectAnswer(event, '7th Kyu')"><div style="width:50%;height:20px;"><div style="width:100%; height:50%;background-color:yellow;">&nbsp;</div><div style="width:100%; height:50%;background-color:blue;">&nbsp;</div></div><div style="width:100%; height:100%;">7th&nbsp;Kyu</button>
+  <tr>
+  <td style="width: 50%; height:9%">
+  <button style="width: 100%;" class="button-6" role="button" id="6th Kyu"   onclick="selectAnswer(event, '6th Kyu')"><div style="width:50%;height:20px;"><div style="width:100%; height:50%;background-color:yellow;">&nbsp;</div><div style="width:100%; height:50%;background-color:yellow;">&nbsp;</div></div><div style="width:100%; height:100%;">6th&nbsp;Kyu</button>
+  <td style="width: 50%; height:9%">
+  <button style="width: 100%;" class="button-6" role="button" id="5th Kyu"  onclick="selectAnswer(event, '5th Kyu')"><div style="width:50%;height:20px;"><div style="width:100%; height:50%;background-color:green;">&nbsp;</div><div style="width:100%; height:50%;background-color:yellow;">&nbsp;</div></div><div style="width:100%; height:100%;">5th&nbsp;Kyu</button>
+  <tr>
+  <td style="width: 50%; height:9%">
+  <button style="width: 100%;" class="button-6" role="button" id="4th Kyu"   onclick="selectAnswer(event, '4th Kyu')"><div style="width:50%;height:20px;"><div style="width:100%; height:50%;background-color:green;">&nbsp;</div><div style="width:100%; height:50%;background-color:green;">&nbsp;</div></div><div style="width:100%; height:100%;">4th&nbsp;Kyu</button>
+  <td style="width: 50%; height:9%">
+  <button style="width: 100%;" class="button-6" role="button" id="3rd Kyu"   onclick="selectAnswer(event, '3rd Kyu')"><div style="width:50%;height:20px;"><div style="width:100%; height:50%;background-color:brown;">&nbsp;</div><div style="width:100%; height:50%;background-color:green;">&nbsp;</div></div><div style="width:100%; height:100%;">3rd&nbsp;Kyu</button>
+  <tr>
+  <td style="width: 50%; height:9%">
+  <button style="width: 100%;" class="button-6" role="button" id="2nd Kyu"   onclick="selectAnswer(event, '2nd Kyu')"><div style="width:50%;height:20px;"><div style="width:100%; height:50%;background-color:brown;">&nbsp;</div><div style="width:100%; height:50%;background-color:brown;">&nbsp;</div></div><div style="width:100%; height:100%;">2nd&nbsp;Kyu</button>
+  <td style="width: 50%; height:9%">
+  <button style="width: 100%;" class="button-6" role="button" id="1st Kyu"   onclick="selectAnswer(event, '1st Kyu')"><div style="width:50%;height:20px;"><div style="width:100%; height:50%;background-color:black;">&nbsp;</div><div style="width:100%; height:50%;background-color:brown;">&nbsp;</div></div><div style="width:100%; height:100%;">1st&nbsp;Kyu</button>
+  <tr>
+    <td style="width: 50%; height:9%"  colspan="2">
+    <button style="width: 100%;" class="button-6" role="button" id="1st Dan"   onclick="selectAnswer(event, '1st Dan')">
+	<div style="width:50%;height:20px;display:flex;">
+	  <div style="width:70%; height:100%;background-color:black;">&nbsp;</div>
+	  <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
+	  <div style="width:28%; height:100%;background-color:black;">&nbsp;</div>
+	</div>
+	<div style="width:50%; height:100%;">1st Dan</button>
+  <tr>
+    <td style="width: 50%; height:9%"  colspan="2">
+    <button style="width: 100%;" class="button-6" role="button" id="2nd Dan"   onclick="selectAnswer(event, '2nd Dan')">
+	<div style="width:50%;height:20px;display:flex;">
+	  <div style="width:70%; height:100%;background-color:black;">&nbsp;</div>
+	  <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
+	  <div style="width:2%; height:100%;background-color:black;">&nbsp;</div>
+	  <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
+	  <div style="width:24%; height:100%;background-color:black;">&nbsp;</div>
+	</div>
+	<div style="width:50%; height:100%;">2nd Dan</button>
+  <tr>
+    <td style="width: 50%; height:9%"  colspan="2">
+    <button style="width: 100%;" class="button-6" role="button" id="3rd Dan"   onclick="selectAnswer(event, '3rd Dan')">
+	<div style="width:50%;height:20px;display:flex;">
+	  <div style="width:70%; height:100%;background-color:black;">&nbsp;</div>
+	  <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
+	  <div style="width:2%; height:100%;background-color:black;">&nbsp;</div>
+	  <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
+	  <div style="width:2%; height:100%;background-color:black;">&nbsp;</div>
+	  <div style="width:2%; height:100%;background-color:yellow;">&nbsp;</div>
+	  <div style="width:20%; height:100%;background-color:black;">&nbsp;</div>
+	</div>
+	<div style="width:50%; height:100%;">3rd Dan</button>
+  </table>
+</div>
+
+<script type="text/javascript">
+    requirejs.config({
+      paths: {
+        'js-yaml': 'https://unpkg.com/js-yaml@4.1.0/dist/js-yaml'
+      }
+    });
+	
+	var busy = false;
+	var questions = [];
+	var question_index = 0;
+	
+    requirejs(['js-yaml'], function (yaml) {
+
+      $.get("content.yaml", function (data) {
+        try {
+          data = yaml.loadAll(data)[0];
+          console.log(" ----[DATA]----");
+          console.log(JSON.stringify(data, undefined, 2));
+          var ranks = Object.keys(data);
+          var techniques = [];
+		  for (const rank of ranks) {
+		    for (technique of data[rank]) {
+			  techniques.push(technique);
+			}
+		  }
+          console.log(" ----[RANKS]----");
+          console.log(JSON.stringify(ranks, undefined, 2));
+          console.log(" ----[TECHNIQUES]----");
+		  console.log(JSON.stringify(techniques, undefined, 2));
+		  
+		  var quest = "";
+		  var level = "";
+		  
+		  function randomize() {
+		   var randomRank = ranks[Math.floor(Math.random()*ranks.length)];
+		   var randomTechnique = data[randomRank][Math.floor(Math.random()*data[randomRank].length)];
+		  
+           quest = randomTechnique;
+           level= randomRank
+           document.getElementById('question').innerHTML=quest;
+		  }
+		  
+		  randomize();
+		  
+          function selectAnswer(evt, answer) {
+		     if(busy) {
+               console.log("Still busy...");
+			   return;
+			 }
+		  
+             if(answer == level) {
+			   busy=true;
+               console.log("Correct answer.");
+			   var originalContent=document.getElementById(answer).innerHTML;
+			   document.getElementById(level).style.backgroundColor="#90EE90";
+			   setTimeout(function() {
+			     document.getElementById(level).style.backgroundColor="";
+				 randomize();
+				 busy=false;
+			    }, 1000);
+             } else {
+			   busy=true;
+               console.log("wrong. answer:" + answer + "expected: " + level + " for " + document.getElementById("question").innerHTML);
+			   document.getElementById(answer).style.backgroundColor="#FF7276";
+			   document.getElementById(level).style.backgroundColor="#90EE90";
+			   setTimeout(function() {
+			    document.getElementById(answer).style.backgroundColor="";
+			    document.getElementById(level).style.backgroundColor="";
+				busy=false;
+			}, 2000);
+             }
+             
+          }
+		  
+		  window.selectAnswer=selectAnswer;
+          console.log("=== READY! ===");
+        }
+        catch (exceptionVar) {
+           console.error(exceptionVar);
+           showError(exceptionVar.name, exceptionVar.message)
+        }
+      });
+    });
+</script>
+</body>
