@@ -173,14 +173,28 @@ font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,
           
           var quest = "";
           var level = "";
+          var currentLevel = 0;
+          var questions = [];
+          var levels = [];
+          var firstTry=true;
           
           function randomize() {
-           var randomRank = ranks[Math.floor(Math.random()*ranks.length)];
-           var randomTechnique = data[randomRank][Math.floor(Math.random()*data[randomRank].length)];
-          
-           quest = randomTechnique;
-           level= randomRank
+           console.log("Current level: " + currentLevel);
+           
+           firstTry=true;
+           if (currentLevel < questions.length) {
+             quest=questions[currentLevel]
+             level=levels[currentLevel];
+           } else {
+             var randomRank = ranks[Math.floor(Math.random()*ranks.length)];
+             var randomTechnique = data[randomRank][Math.floor(Math.random()*data[randomRank].length)];
+             questions.push(randomTechnique);
+             levels.push(randomRank);
+             quest = randomTechnique;
+             level = randomRank
+           }
            document.getElementById('question').innerHTML=quest;
+           console.log(questions);
           }
           
           randomize();
@@ -193,17 +207,19 @@ font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,
           
              if(answer == level) {
                busy=true;
-               console.log("Correct answer.");
+               console.log("Correct answer: " + answer + " (Level:" + currentLevel + ")");
                var originalContent=document.getElementById(answer).innerHTML;
                document.getElementById(level).style.backgroundColor="#90EE90";
                setTimeout(function() {
                  document.getElementById(level).style.backgroundColor="";
+                 if (firstTry) { currentLevel++; }
                  randomize();
                  busy=false;
                 }, 1000);
              } else {
                busy=true;
                console.log("wrong. answer:" + answer + "expected: " + level + " for " + document.getElementById("question").innerHTML);
+               if (currentLevel > 0) {firstTry=false; currentLevel=0;}
                document.getElementById(answer).style.backgroundColor="#FF7276";
                document.getElementById(level).style.backgroundColor="#90EE90";
                setTimeout(function() {
