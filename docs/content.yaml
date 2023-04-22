@@ -6,24 +6,28 @@
 - Oi Tsuki Jodan
 - Morote Tsuki Gedan
 - Morote Tsuki Chudan
-- Morote Tsuki Jodan"
+- Morote Tsuki Jodan
 # Blocks:
 - Gedan Barai
 - Jodan Uke
 # Kicks
 - Kin Geri
 - Hiza Geri
+# Katas:
+- Taikyokusono Ichi
 9th Kyu:
 # Punches:
 - Gyaku Tsuki Gedan
 - Gyaku Tsuki Chudan
 - Gyaku Tsuki Jodan
-- Ago Uchi
+- Seiken Ago Uchi
 # Blocks:
-- Soto Uke
-- Uchi Uke
+- Seiken Soto Uke
+- Seiken Uchi Uke
 # Kicks
 - Mae Geri Chudan
+# Katas:
+- Taikyokusono Ni
 8th Kyu:
 # Punches:
 - Tate Tsuki Gedan
@@ -35,6 +39,9 @@
 - Uchi Uke Gedan Barai
 # Kicks:
 - Mae Geri Jodan
+# Katas:
+- Taikyokusono San
+- Pinansono Ichi
 7th Kyu:
 # Punches:
 - Tettsui Komi Kami
@@ -51,27 +58,31 @@
 - Yoko Keage
 - Mawashi Uchi Keage Haisoku
 - Mawashi Soto Keage Taisoku
+# Katas:
+- Pinansono Ni
 6th Kyu:
 # Punches:
 - Uraken Ganmen Uchi
 - Uraken Sayu Ganmen Uchi
-- Uraken Oroshi uchi
+- Uraken Oroshi Uchi
 - Uraken Hizo Uchi
-- Nuhon Nukite Me Tsuki
+- Nihon Nukite Me Tsuki
 - Yohon Nukite Jodan
 - Yohon Nukite Chudan
 - Haishu Uchi Jodan
 - Haishu Uchi Chudan
 # Blocks:
 - Seiken Juji Uke Jodan
-- Seiken Juju Uke Gedan
+- Seiken Juji Uke Gedan
 # Kicks:
-- Kansetku Geri
-- Yoko Geri Gedan
-- Yoko Geri Chudan
-- Yoko Geri Jodan
+- Kansetzu Geri Sokuto
+- Yoko Geri Sokuto Gedan
+- Yoko Geri Sokuto Chudan
+- Yoko Geri Sokuto Jodan
 - Mawashi Geri Gedan Chusoku
 - Mawashi Geri Gedan Heisoku
+# Katas:
+- Pinansono San
 5th Kyu:
 # Punches:
 - Shotei Uchi Jodan
@@ -87,6 +98,8 @@
 - Ushiro Geri Chudan
 - Ushiro Geri Jodan
 - Kansetku Geri Kakato
+# Katas:
+- Sanchi No Kata
 4th Kyu:
 # Punches:
 - Shuto Uchi Komi
@@ -103,6 +116,8 @@
 - Yoko Geri Jodan
 - Ushiro Geri Jodan
 - Mawashi Geri Jodan
+# Katas:
+- Pinansono Yon
 3rd Kyu:
 # Punches:
 - Chudan Hiji Ate
@@ -119,6 +134,8 @@
 - Mae Kakato Geri Chudan
 - Mae Kakato Geri Gedan
 - Ago Geri Jodan
+# Katas:
+- Pinansono Go
 2nd Kyu:
 # Punches:
 - Hiraken Tsuki Jodan
@@ -135,6 +152,8 @@
 # Kicks:
 - Mae Tobi Geri
 - Mae Tobi Nidan Geri
+# Katas:
+- Geksai Dai
 1st Kyu:
 # Punches:
 - Ryuto Ken Tsuki Chudan
@@ -151,7 +170,48 @@
 # Kicks:
 - Yoko Tobi Geri
 - Jodan Uchi Haisoku Geri
-
-# TODO: Add 1st Dan
-# TODO: Add 2nd Dan
-# TODO: Add 3rd Dan
+# Katas:
+- Yantsu
+- Tsuki No Kata
+Sho Dan:
+# Strikes / Punches:
+- Morote Haito Uchi Jodan
+- Morote Haito Uchi Chudan
+- Haito Uchi Jodan
+- Haito Uchi Chudan
+- Haito Uchi Gedan
+# Block
+- Morote Kake Uke
+- Osai Uke
+# Kicks:
+- Kake Geri Jodan
+- Kake Geri Chudan
+- Ushiro Mwashi Geri Gedan
+- Ushiro Mwashi Geri Chudan
+- Ushiro Mwashi Geri Jodan
+# Katas
+# ???
+Ni Dan:
+# Punches:
+- Toho Uchi
+- Keiko Uchi
+# Blocks:
+- Shuto Morote Uke Gedan
+- Hiji Uke Chudan
+- Shotei Morote Uke Gedan
+# Kicks:
+- Ushiro Tobi Geri
+- Ushiro Mawashi Tobi Geri
+- Mawashi Tobi Geri
+- Age Kakato Ushiro Geri
+# Katas:
+ - Kanku Dai
+ - Geksai Dai
+ - Geksai Sho
+ - Seinchin
+San Dan:
+# Katas:
+- Garyu
+- Seipai
+- Sushi Ho
+- Antei
