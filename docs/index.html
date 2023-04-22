@@ -200,9 +200,14 @@ font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,
            
            if (highScore < currentLevel)
            {
+               document.getElementById("score").style.backgroundColor="#90EE90";
+               document.getElementById("high-score").style.backgroundColor="#90EE90";
                highScore=currentLevel;
                localStorage.setItem("high-score", currentLevel);
                document.getElementById("high-score").innerHTML="High score: " + highScore;
+           } else {
+                 document.getElementById("score").style.backgroundColor="";
+                 document.getElementById("high-score").style.backgroundColor="";
            }
 
            firstTry=true;
@@ -243,7 +248,11 @@ font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,
              } else {
                busy=true;
                console.log("wrong. answer:" + answer + "expected: " + level + " for " + document.getElementById("question").innerHTML);
-               if (currentLevel > 0) {firstTry=false; currentLevel=0;}
+               if (currentLevel > 0) {
+                 firstTry=false;
+                 currentLevel=0;
+                 document.getElementById("score").style.backgroundColor="#FF7276";
+               }
                document.getElementById(answer).style.backgroundColor="#FF7276";
                document.getElementById(level).style.backgroundColor="#90EE90";
                setTimeout(function() {
