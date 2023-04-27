@@ -1,25 +1,33 @@
 ---
 10th Kyu:
+# Positions:
+- Fudo Dachni
+- Yoi Dachi
+- Zenkutsu Dachi
 # Punches:
-- Oi Tsuki Gedan
-- Oi Tsuki Chudan
-- Oi Tsuki Jodan
-- Morote Tsuki Gedan
-- Morote Tsuki Chudan
-- Morote Tsuki Jodan
+- Seiken Oi Tsuki Gedan
+- Seiken Oi Tsuki Chudan
+- Seiken Oi Tsuki Jodan
+- Seiken Morote Tsuki Gedan
+- Seiken Morote Tsuki Chudan
+- Seiken Morote Tsuki Jodan
 # Blocks:
-- Gedan Barai
-- Jodan Uke
+- Seiken Gedan Barai
+- Seiken Jodan Uke
 # Kicks
 - Kin Geri
-- Hiza Geri
+- Hiza Ganmen Geri
 # Katas:
 - Taikyokusono Ichi
 9th Kyu:
+# Positions:
+- Sanchin Dachi
+- Kukutsu Dachi
+- Musubi Dachi
 # Punches:
-- Gyaku Tsuki Gedan
-- Gyaku Tsuki Chudan
-- Gyaku Tsuki Jodan
+- Seiken Gyaku Tsuki Gedan
+- Seiken Gyaku Tsuki Chudan
+- Seiken Gyaku Tsuki Jodan
 - Seiken Ago Uchi
 # Blocks:
 - Seiken Soto Uke
@@ -29,20 +37,25 @@
 # Katas:
 - Taikyokusono Ni
 8th Kyu:
+# Positions:
+- Kiba Dachi
+- Heiko Dachi
 # Punches:
 - Tate Tsuki Gedan
 - Tate Tsuki Chudan
 - Tate Tsuki Jodan
 - Shita Tsuki
 # Blocks:
-- Morote Uchi Uke
-- Uchi Uke Gedan Barai
+- Seiken Morote Uchi Uke
+- Seiken Uchi Uke Gedan Barai
 # Kicks:
 - Mae Geri Jodan
 # Katas:
-- Taikyokusono San
-- Pinansono Ichi
+- Taikyoku Sono San
+- Pinan Sono Ichi
 7th Kyu:
+# Positions:
+- Neko Ashi Dachi
 # Punches:
 - Tettsui Komi Kami
 - Tettsui Oroshi Ganmen Uchi
@@ -52,14 +65,14 @@
 - Tettsui Yoko Uchi Gedan
 # Blocks:
 - Shuto Mawashi Uke
-- Mawashi Gedan Barai
+- Seiken Mawashi Gedan Barai
 # Kicks:
 - Mae Chusoku Keage
 - Yoko Geri Keage
 - Mawashi Uchi Keage Haisoku
 - Mawashi Soto Keage Taisoku
 # Katas:
-- Pinansono Ni
+- Pinan Sono Ni
 6th Kyu:
 # Punches:
 - Uraken Ganmen Uchi
@@ -69,21 +82,22 @@
 - Nihon Nukite Me Tsuki
 - Yohon Nukite Jodan
 - Yohon Nukite Chudan
-- Haishu Uchi Jodan
-- Haishu Uchi Chudan
 # Blocks:
 - Seiken Juji Uke Jodan
 - Seiken Juji Uke Gedan
 # Kicks:
-- Kansetzu Geri Sokuto
+- Kansetsu Geri Sokuto
 - Yoko Geri Sokuto Gedan
 - Yoko Geri Sokuto Chudan
 - Yoko Geri Sokuto Jodan
 - Mawashi Geri Gedan Chusoku
 - Mawashi Geri Gedan Heisoku
 # Katas:
-- Pinansono San
+- Pinan Sono San
+- Tekki Sono Ichi
 5th Kyu:
+# Positions:
+- Moro Ashi Dachi
 # Punches:
 - Shotei Uchi Jodan
 - Shotei Uchi Chudan
@@ -97,10 +111,13 @@
 - Ushiro Geri Gedan
 - Ushiro Geri Chudan
 - Ushiro Geri Jodan
-- Kansetku Geri Kakato
+- Kansetsu Geri Kakato
 # Katas:
-- Sanchi No Kata
+- Sanchin No Kata
 4th Kyu:
+# Positions:
+- Heisoku Dachi
+- Uchi Ashi Hi Dachi
 # Punches:
 - Shuto Uchi Komi
 - Shuto Hizo Uchi
@@ -108,6 +125,7 @@
 - Shuto Jodan Uchi Uchi
 - Shuto Yoko Gamen Uchi
 # Blocks:
+- Shuto Mae Mawashi Uke
 - Shuto Soto Uke
 - Shuto Uchi Uke
 - Shuto Jodan Uke
@@ -117,8 +135,11 @@
 - Ushiro Geri Jodan
 - Mawashi Geri Jodan
 # Katas:
-- Pinansono Yon
+- Pinan Sono Yon
 3rd Kyu:
+# Positions
+- Kake Dachi
+- Shiko Dachi
 # Punches:
 - Chudan Hiji Ate
 - Jodan Mae Hiji Ate
@@ -136,6 +157,7 @@
 - Ago Geri Jodan
 # Katas:
 - Pinansono Go
+- Tekki Sono Ni
 2nd Kyu:
 # Punches:
 - Hiraken Tsuki Jodan
@@ -158,14 +180,17 @@
 # Punches:
 - Ryuto Ken Tsuki Chudan
 - Ryuto Ken Tsuki Jodan
-- Naka Yubi Ipon Ken Chudan
-- Naka Yubi Ipon Ken Jodan
+- Naka Yubi Ippon Ken Chudan
+- Naka Yubi Ippon Ken Jodan
 - Oya Yubi Ken Chudan
-- Oya Yubi Ken Chudan Jodan
+- Oya Yubi Ken Jodan
+- Hitosashi Yubi Ippon Ken
 - Yama Tsuki
 # Blocks:
 - Kake Uke Jodan
 - Kake Uke Chudan
+- Oroshi Uchi Kakato Geri
+- Oroshi Soto Kakato Geri
 - Haito Chudan Uchi Uke
 # Kicks:
 - Yoko Tobi Geri
@@ -173,6 +198,7 @@
 # Katas:
 - Yantsu
 - Tsuki No Kata
+- Tekki Sono San
 Sho Dan:
 # Strikes / Punches:
 - Morote Haito Uchi Jodan
@@ -190,7 +216,8 @@ Sho Dan:
 - Ushiro Mawashi Geri Chudan
 - Ushiro Mawashi Geri Jodan
 # Katas
-# ???
+- Antei
+- Saiha
 Ni Dan:
 # Punches:
 - Toho Uchi
@@ -214,4 +241,3 @@ San Dan:
 - Garyu
 - Seipai
 - Sushiho
-- Antei
